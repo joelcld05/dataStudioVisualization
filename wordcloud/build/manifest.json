@@ -1,7 +1,7 @@
 {
-  "name": "Network Visualizations",
-  "organization": "Network visualization",
-  "description": "Network visualization package.",
+  "name": "Wordcloud Visualizations",
+  "organization": "Wordcloud visualization",
+  "description": "Wordcloud visualization package.",
   "logoUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/How_to_use_icon.svg/1200px-How_to_use_icon.svg.png",
   "organizationUrl": "https://github.com/mwhitaker/community_viz_tutorial/tree/master/src",
   "supportUrl": "https://github.com/mwhitaker/community_viz_tutorial/tree/master/src",
@@ -11,13 +11,13 @@
   "devMode": true,
   "components": [
     {
-      "name": "Network Visualizations",
-      "description": "Network Visualizations",
+      "name": "Wordcloud Visualizations",
+      "description": "Wordcloud Visualizations",
       "iconUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/How_to_use_icon.svg/1200px-How_to_use_icon.svg.png",
       "resource": {
-        "js": "gs://networkviz/network/dev/index.js",
-        "config": "gs://networkviz/network/dev/index.json",
-        "css": "gs://networkviz/network/dev/index.css"
+        "js": "gs://networkviz/wordcloud/dev/index.js",
+        "config": "gs://networkviz/wordcloud/dev/index.json",
+        "css": "gs://networkviz/wordcloud/dev/index.css"
       }
     }
   ]
