@@ -3,9 +3,6 @@ const viz = require('@google/dscc-scripts/viz/initialViz.js');
 const local = require('/src/localMessage.js');
 const am4core = require('@amcharts/amcharts4/core.js');
 const wordCloud = require('@amcharts/amcharts4/plugins/wordCloud');
-
-//require('highcharts/modules/exporting')(Highcharts);
-
 var containerElement = document.createElement('div');
 containerElement.id = 'container';
 const height = dscc.getHeight();
@@ -22,8 +19,8 @@ const drawViz = (data) => {
 
   data.tables.DEFAULT.forEach(element => {
     var stringL=parseInt(element.metricID[0]);
-    stringL=stringL>=50?50:stringL;
-    textString = textString + (element.dimID[0] + " ").repeat(parseInt(element.metricID[0]));
+    stringL=stringL>=200?200:stringL;
+    textString = textString + (element.dimID[0] + " ").repeat(parseInt(stringL));
   });
   
 
@@ -33,26 +30,27 @@ const drawViz = (data) => {
     var series = chart.series.push(new wordCloud.WordCloudSeries());
     chart.height=height;
     chart.width=width;
-    series.accuracy = 4;
-    series.step = 15;
-    series.rotationThreshold = 0.7;
-    series.maxCount = 200;
+    //series.accuracy = 4;
+    //series.step = 15;
+    //eries.rotationThreshold = 0.7;
+    //series.maxCount = 200;
     series.minWordLength = 2;
     series.labels.template.margin(4,4,4,4);
-    series.maxFontSize = am4core.percent(30);
+    series.maxFontSize = am4core.percent(15);
     
     series.text = textString;
 
     series.colors = new am4core.ColorSet();
-    series.colors.passOptions = {}; // makes it loop
+    //series.colors.passOptions = {}; // makes it loop
     
     //series.labelsContainer.rotation = 45;
     series.angles = [0,0];
-    series.fontWeight = "700"
+    //series.fontWeight = "700"
+
     
     setInterval(function () {
-      series.dataItems.getIndex(Math.round(Math.random() * (series.dataItems.length - 1))).setValue("value", Math.round(Math.random() * 10));
-     }, 1000*1000)
+          series.dataItems.getIndex(Math.round(Math.random() * (series.dataItems.length - 1))).setValue("value", Math.round(Math.random() * 10));
+     }, 100020*1000)
     
     });
     

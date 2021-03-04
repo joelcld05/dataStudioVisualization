@@ -35,10 +35,10 @@ export const message = {
       },
       {
         "dimID": [
-          "Vinculación con el gobierno"
+          "Vinculaciónconelgobierno"
         ],
         "metricID": [
-          "59"
+          "8725"
         ]
       },
       {
