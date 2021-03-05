@@ -25,5 +25,17 @@
       ]
     }
   ],
-  "style": [ ]
+  "style": [
+    {
+      "id": "configWord",
+      "label": "Configuration",
+      "elements": [
+        {
+          "type": "TEXTAREA",
+          "id": "excludeWords",
+          "label": "Exclude Words (separated by comma)"
+        }
+      ]
+    }
+  ]
 }

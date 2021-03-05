@@ -37,7 +37,12 @@ export const message = {
       },
     ],
   },
-  style: {},
+  "style": {
+    "excludeWords": {
+      "value": "Nito Cortizo:NitoCortizo;Juan Diego Vásquez:JDVasquezGut",
+      "defaultValue": ""
+    }
+  },
 };
 
 

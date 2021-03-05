@@ -3,7 +3,87 @@ export const message = {
     "DEFAULT": [
       {
         "dimID": [
-          "Opinión sobre SM"
+          "AdventurePark"
+        ],
+        "metricID": [
+          "70"
+        ]
+      },
+      {
+        "dimID": [
+          "AutosMar"
+        ],
+        "metricID": [
+          "9"
+        ]
+      },
+      {
+        "dimID": [
+          "BayanoAdventure"
+        ],
+        "metricID": [
+          "70"
+        ]
+      },
+      {
+        "dimID": [
+          "CanalDe Panama"
+        ],
+        "metricID": [
+          "9"
+        ]
+      },
+      {
+        "dimID": [
+          "CanalDe Panamá"
+        ],
+        "metricID": [
+          "40"
+        ]
+      },
+      {
+        "dimID": [
+          "Canaldepanama"
+        ],
+        "metricID": [
+          "13"
+        ]
+      },
+      {
+        "dimID": [
+          "Canaldepanamá"
+        ],
+        "metricID": [
+          "8"
+        ]
+      },
+      {
+        "dimID": [
+          "CarSolution"
+        ],
+        "metricID": [
+          "9"
+        ]
+      },
+      {
+        "dimID": [
+          "Cardenaspanamá"
+        ],
+        "metricID": [
+          "28"
+        ]
+      },
+      {
+        "dimID": [
+          "Cascoantiguopanama"
+        ],
+        "metricID": [
+          "28"
+        ]
+      },
+      {
+        "dimID": [
+          "Clases"
         ],
         "metricID": [
           "5"
@@ -11,74 +91,234 @@ export const message = {
       },
       {
         "dimID": [
-          "Vinculación con política"
+          "ClasesDe Inglés"
         ],
         "metricID": [
-          "556"
+          "6"
         ]
       },
       {
         "dimID": [
-          "Stanley Motta"
-        ],
-        "metricID": [
-          "78"
-        ]
-      },
-      {
-        "dimID": [
-          "Negocios"
-        ],
-        "metricID": [
-          "8725"
-        ]
-      },
-      {
-        "dimID": [
-          "Vinculaciónconelgobierno"
-        ],
-        "metricID": [
-          "8725"
-        ]
-      },
-      {
-        "dimID": [
-          "Fundación Alberto Motta"
-        ],
-        "metricID": [
-          "1"
-        ]
-      },
-      {
-        "dimID": [
-          "Museo de la Mola"
-        ],
-        "metricID": [
-          "2"
-        ]
-      },
-      {
-        "dimID": [
-          "Gobierno Panameñista"
-        ],
-        "metricID": [
-          "3"
-        ]
-      },
-      {
-        "dimID": [
-          "Caso Ricardo Martinelli"
-        ],
-        "metricID": [
-          "4"
-        ]
-      },
-      {
-        "dimID": [
-          "Casos de corrupción"
+          "Com"
         ],
         "metricID": [
           "5"
+        ]
+      },
+      {
+        "dimID": [
+          "Cotice"
+        ],
+        "metricID": [
+          "5"
+        ]
+      },
+      {
+        "dimID": [
+          "Docentes"
+        ],
+        "metricID": [
+          "5"
+        ]
+      },
+      {
+        "dimID": [
+          "Elcarmenpanama"
+        ],
+        "metricID": [
+          "28"
+        ]
+      },
+      {
+        "dimID": [
+          "EmisionesDe Co2"
+        ],
+        "metricID": [
+          "9"
+        ]
+      },
+      {
+        "dimID": [
+          "ExpertoAdvierte"
+        ],
+        "metricID": [
+          "5"
+        ]
+      },
+      {
+        "dimID": [
+          "ExploraciónDe Cuevas"
+        ],
+        "metricID": [
+          "68"
+        ]
+      },
+      {
+        "dimID": [
+          "FernandezCordoba"
+        ],
+        "metricID": [
+          "10"
+        ]
+      },
+      {
+        "dimID": [
+          "Kayaking"
+        ],
+        "metricID": [
+          "28"
+        ]
+      },
+      {
+        "dimID": [
+          "LagoBayano"
+        ],
+        "metricID": [
+          "70"
+        ]
+      },
+      {
+        "dimID": [
+          "Link"
+        ],
+        "metricID": [
+          "6"
+        ]
+      },
+      {
+        "dimID": [
+          "Marzo"
+        ],
+        "metricID": [
+          "7"
+        ]
+      },
+      {
+        "dimID": [
+          "MountainBike"
+        ],
+        "metricID": [
+          "23"
+        ]
+      },
+      {
+        "dimID": [
+          "Panama"
+        ],
+        "metricID": [
+          "11"
+        ]
+      },
+      {
+        "dimID": [
+          "Panamá"
+        ],
+        "metricID": [
+          "8"
+        ]
+      },
+      {
+        "dimID": [
+          "Paz"
+        ],
+        "metricID": [
+          "5"
+        ]
+      },
+      {
+        "dimID": [
+          "PaísesLatinoamericanos"
+        ],
+        "metricID": [
+          "5"
+        ]
+      },
+      {
+        "dimID": [
+          "Pty"
+        ],
+        "metricID": [
+          "5"
+        ]
+      },
+      {
+        "dimID": [
+          "RoxyCar"
+        ],
+        "metricID": [
+          "7"
+        ]
+      },
+      {
+        "dimID": [
+          "Running"
+        ],
+        "metricID": [
+          "23"
+        ]
+      },
+      {
+        "dimID": [
+          "RíoTigre"
+        ],
+        "metricID": [
+          "42"
+        ]
+      },
+      {
+        "dimID": [
+          "SenderoJurásico"
+        ],
+        "metricID": [
+          "23"
+        ]
+      },
+      {
+        "dimID": [
+          "SenderoNatural"
+        ],
+        "metricID": [
+          "23"
+        ]
+      },
+      {
+        "dimID": [
+          "TransiciónEnergética"
+        ],
+        "metricID": [
+          "5"
+        ]
+      },
+      {
+        "dimID": [
+          "Transitmicapanamá"
+        ],
+        "metricID": [
+          "28"
+        ]
+      },
+      {
+        "dimID": [
+          "Velerospanama"
+        ],
+        "metricID": [
+          "28"
+        ]
+      },
+      {
+        "dimID": [
+          "Whatsapp"
+        ],
+        "metricID": [
+          "9"
+        ]
+      },
+      {
+        "dimID": [
+          "ÁreaDe Camping"
+        ],
+        "metricID": [
+          "23"
         ]
       }
     ]
@@ -86,22 +326,27 @@ export const message = {
   "fields": {
     "dimID": [
       {
-        "id": "qt_6mtnnmw9gc",
-        "name": "tag",
+        "id": "qt_y4ckkrlkhc",
+        "name": "xData",
         "type": "TEXT",
         "concept": "DIMENSION"
       }
     ],
     "metricID": [
       {
-        "id": "qt_zeunnmw9gc",
-        "name": "Id",
-        "type": "NUMBER",
-        "concept": "METRIC"
+        "id": "qt_z4ckkrlkhc",
+        "name": "yData",
+        "type": "TEXT",
+        "concept": "DIMENSION"
       }
     ]
   },
-  "style": {},
+  "style": {
+    "excludeWords": {
+      "value": "ÁreaDe Camping,Whatsapp,Pty,Link",
+      "defaultValue": ""
+    }
+  },
   "theme": {
     "themeFillColor": {
       "color": "#eceff1",

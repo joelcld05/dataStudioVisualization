@@ -27,13 +27,13 @@
   ],
   "style": [
     {
-      "id": "config",
-      "label": "Config",
+      "id": "configWord",
+      "label": "Configuration",
       "elements": [
         {
           "type": "TEXTAREA",
-          "id": "Config",
-          "label": "Config"
+          "id": "excludeWords",
+          "label": "Merge Words (Follow this format: 'Word1':['merge1','merge2',...],'Word2':[...])"
         }
       ]
     }

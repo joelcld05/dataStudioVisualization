@@ -20,7 +20,52 @@ const drawViz = (data) => {
 
   let yData = JSON.parse(data.tables.DEFAULT[0].metricID[0].replace("},];","}]"));
   let link = JSON.parse(data.tables.DEFAULT[1].metricID[0].replace("},];","}]"));
+  let merge={};
+  try{
+    let semiColonArray=data.style.excludeWords.value.split(';');
+    console.log(semiColonArray);
+    semiColonArray.forEach(element => {
+      let dobleColon=element.split(':');
+      merge[dobleColon[0]]=dobleColon[1].split(',');
+    });
+    
+  }catch(e){
+    console.log(e);
+    merge={};
+  }
+  console.log(merge);
 
+  var replateLink={};
+  for (const key in merge) {
+    if (Object.hasOwnProperty.call(merge, key)) {
+      let objFather = yData.find(obj => obj.label == key);
+      merge[key].forEach(element => {
+        let child=yData.find(obj => obj.label == element);
+        const index = yData.indexOf(child);
+        replateLink[child.id]=objFather.id;
+
+        if (index > -1) {
+          yData.splice(index, 1);
+        }
+      });
+    }
+  }
+
+  for (const key in link) {    
+    
+    if (Object.hasOwnProperty.call(replateLink, link[key].from)){
+      link[key].from=replateLink[link[key].from];
+      //link.splice(key, 1);
+    }
+    
+    if(Object.hasOwnProperty.call(replateLink, link[key].to)){
+      link[key].to=replateLink[link[key].to];
+      //link.splice(key, 1);
+    }
+  }
+  
+  
+  
   var nodes = new visData.DataSet(yData);
   var edges = new visData.DataSet(link);
   

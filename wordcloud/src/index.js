@@ -14,47 +14,47 @@ document.body.appendChild(containerElement);
 export const LOCAL = false;
 // write viz code here
 const drawViz = (data) => {
-  
-  var textString= "";
 
+
+  var processedData = [];
+  var exclude=data.style.excludeWords.value.split(',');
   data.tables.DEFAULT.forEach(element => {
-    var stringL=parseInt(element.metricID[0]);
-    stringL=stringL>=200?200:stringL;
-    textString = textString + (element.dimID[0] + " ").repeat(parseInt(stringL));
+    if (!exclude.includes(element.dimID[0])){
+      processedData.push({
+        "tag": element.dimID[0],
+        "weight": parseInt(element.metricID[0])
+      });
+    }
   });
   
 
-  am4core.ready(function() {
-
+  am4core.ready(function () {
+    
     var chart = am4core.create("container", wordCloud.WordCloud);
     var series = chart.series.push(new wordCloud.WordCloudSeries());
-    chart.height=height;
-    chart.width=width;
-    //series.accuracy = 4;
-    //series.step = 15;
-    //eries.rotationThreshold = 0.7;
-    //series.maxCount = 200;
-    series.minWordLength = 2;
-    series.labels.template.margin(4,4,4,4);
-    series.maxFontSize = am4core.percent(15);
+    chart.height = height;
+    chart.width = width;
+    series.accuracy = 1;
+    series.rotationThreshold = 0.7;
+    series.maxCount = 250;
+    series.excludeWords=exclude;
+    series.maxFontSize = am4core.percent(10);
+    series.minFontSize = am4core.percent(2.5);
+
+    series.dataFields.word = "tag";
+    series.dataFields.value = "weight";
     
-    series.text = textString;
+    series.data = processedData;
+    
+    series.labels.template.tooltipText = "{tag}: {weight}";
 
     series.colors = new am4core.ColorSet();
-    //series.colors.passOptions = {}; // makes it loop
-    
-    //series.labelsContainer.rotation = 45;
-    series.angles = [0,0];
-    //series.fontWeight = "700"
+    series.colors.passOptions = {}; 
+    series.angles = [0];
 
-    
-    setInterval(function () {
-          series.dataItems.getIndex(Math.round(Math.random() * (series.dataItems.length - 1))).setValue("value", Math.round(Math.random() * 10));
-     }, 100020*1000)
-    
-    });
-    
- 
+  });
+
+
 
 };
 
