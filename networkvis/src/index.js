@@ -5,36 +5,40 @@ const visData = require('vis-data');
 const visNetwork = require('vis-network');
 //require('highcharts/modules/exporting')(Highcharts);
 
-var containerElement = document.createElement('div');
-containerElement.id = 'container';
-//const margin = { top: 10, bottom: 50, right: 10, left: 10 };
-const height = dscc.getHeight();
-const width = dscc.getWidth();
-containerElement.style.height = height + "px";
-containerElement.style.width = width + "px";
-document.body.appendChild(containerElement);
+
+
 
 export const LOCAL = false;
 // write viz code here
 const drawViz = (data) => {
+  let error;
+  try{
+  document.getElementById('container').remove();
+  }catch(e){
+    error="";
+  }
+  var containerElement = document.createElement('div');
+  containerElement.id = 'container';
+  //const margin = { top: 10, bottom: 50, right: 10, left: 10 };
+  const height = dscc.getHeight();
+  const width = dscc.getWidth();
+  containerElement.style.height = height + "px";
+  containerElement.style.width = width + "px";
+  document.body.appendChild(containerElement);
 
   let yData = JSON.parse(data.tables.DEFAULT[0].metricID[0].replace("},];","}]"));
   let link = JSON.parse(data.tables.DEFAULT[1].metricID[0].replace("},];","}]"));
   let merge={};
   try{
     let semiColonArray=data.style.excludeWords.value.split(';');
-    console.log(semiColonArray);
     semiColonArray.forEach(element => {
       let dobleColon=element.split(':');
       merge[dobleColon[0]]=dobleColon[1].split(',');
     });
-    
   }catch(e){
-    console.log(e);
     merge={};
   }
-  console.log(merge);
-
+  
   var replateLink={};
   for (const key in merge) {
     if (Object.hasOwnProperty.call(merge, key)) {
