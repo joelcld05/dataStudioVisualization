@@ -1,0 +1,24 @@
+{
+  "name": "Network Cluster Visualizations",
+  "organization": "Network Cluster visualization",
+  "description": "Network Cluster visualization package.",
+  "logoUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/How_to_use_icon.svg/1200px-How_to_use_icon.svg.png",
+  "organizationUrl": "https://github.com/mwhitaker/community_viz_tutorial/tree/master/src",
+  "supportUrl": "https://github.com/mwhitaker/community_viz_tutorial/tree/master/src",
+  "privacyPolicyUrl": "https://github.com/mwhitaker/community_viz_tutorial/tree/master/src",
+  "termsOfServiceUrl": "https://github.com/mwhitaker/community_viz_tutorial/tree/master/src",
+  "packageUrl": "https://github.com/mwhitaker/community_viz_tutorial/tree/master/src",
+  "devMode": true,
+  "components": [
+    {
+      "name": "Network Cluster Visualizations",
+      "description": "Network Cluster Visualizations",
+      "iconUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/How_to_use_icon.svg/1200px-How_to_use_icon.svg.png",
+      "resource": {
+        "js": "gs://networkviz/networkcluster/prod/index.js",
+        "config": "gs://networkviz/networkcluster/prod/index.json",
+        "css": "gs://networkviz/networkcluster/prod/index.css"
+      }
+    }
+  ]
+}
