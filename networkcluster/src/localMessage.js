@@ -4,48 +4,222 @@
  * locally.
  *
  */
-
-
-
-
  export const message = {
-  tables: {
-    DEFAULT: [
+  "tables": {
+    "DEFAULT": [
       {
-  dimID: "nodes",
-  metricID: ["[{\"id\":7809, \"group\":5, \"label\":\"Prd\", \"title\":\"<b>Prd - 2 mentions</b>\", \"font\":{\"size\":50}},{\"id\":149633, \"group\":4, \"label\":\"Constitución\", \"title\":\"<b>Constitución - 79 mentions</b>\", \"font\":{\"size\":100, \"color\": \"red\"}},{\"id\":5251, \"group\":9, \"label\":\"Rendición De Cuentas\", \"title\":\"<b>Rendición De Cuentas - 4 mentions</b>\", \"font\":{\"size\":50}},{\"id\":15109, \"group\":3, \"label\":\"Iniciativa\", \"title\":\"<b>Iniciativa - 2 mentions</b>\", \"font\":{\"size\":50}},{\"id\":3983, \"group\":3, \"label\":\"Corrupción\", \"title\":\"<b>Corrupción - 13 mentions</b>\", \"font\":{\"size\":100}},{\"id\":168977, \"group\":0, \"label\":\"Diputado Arquesio\", \"title\":\"<b>Diputado Arquesio - 3 mentions</b>\", \"font\":{\"size\":50}},{\"id\":21011, \"group\":4, \"label\":\"Necesidad\", \"title\":\"<b>Necesidad - 20 mentions</b>\", \"font\":{\"size\":50}},{\"id\":5791819, \"group\":6, \"label\":\"Oficinas Del Tribunal\", \"title\":\"<b>Oficinas Del Tribunal - 4 mentions</b>\", \"font\":{\"size\":50}},{\"id\":4010405, \"group\":6, \"label\":\"Escándalos De Políticos\", \"title\":\"<b>Escándalos De Políticos - 2 mentions</b>\", \"font\":{\"size\":50}},{\"id\":5781185, \"group\":0, \"label\":\"Metieron Mecanismo\", \"title\":\"<b>Metieron Mecanismo - 2 mentions</b>\", \"font\":{\"size\":50}},{\"id\":172187, \"group\":1, \"label\":\"Carta Magna\", \"title\":\"<b>Carta Magna - 29 mentions</b>\", \"font\":{\"size\":50}},{\"id\":3353, \"group\":3, \"label\":\"Órganos\", \"title\":\"<b>Órganos - 2 mentions</b>\", \"font\":{\"size\":50}},{\"id\":155, \"group\":4, \"label\":\"País\", \"title\":\"<b>País - 68 mentions</b>\", \"font\":{\"size\":100}},{\"id\":47259, \"group\":7, \"label\":\"Tribunal Electoral\", \"title\":\"<b>Tribunal Electoral - 57 mentions</b>\", \"font\":{\"size\":100}},{\"id\":3827495, \"group\":2, \"label\":\"Juan Mckay\", \"title\":\"<b>Juan Mckay - 5 mentions</b>\", \"font\":{\"size\":50}},{\"id\":171039, \"group\":8, \"label\":\"Constituyente Originaria\", \"title\":\"<b>Constituyente Originaria - 56 mentions</b>\", \"font\":{\"size\":50}},{\"id\":51615, \"group\":2, \"label\":\"Cierra\", \"title\":\"<b>Cierra - 2 mentions</b>\", \"font\":{\"size\":50}},{\"id\":439591, \"group\":6, \"label\":\"Detalló\", \"title\":\"<b>Detalló - 4 mentions</b>\", \"font\":{\"size\":50}},{\"id\":82469, \"group\":5, \"label\":\"Reglas\", \"title\":\"<b>Reglas - 14 mentions</b>\", \"font\":{\"size\":100}},{\"id\":239147, \"group\":5, \"label\":\"Cambios Reales\", \"title\":\"<b>Cambios Reales - 8 mentions</b>\", \"font\":{\"size\":50}},{\"id\":1898423, \"group\":1, \"label\":\"Partido Movimiento\", \"title\":\"<b>Partido Movimiento - 3 mentions</b>\", \"font\":{\"size\":50}},{\"id\":200623, \"group\":7, \"label\":\"Recolección\", \"title\":\"<b>Recolección - 28 mentions</b>\", \"font\":{\"size\":50}},{\"id\":83251, \"group\":2, \"label\":\"Decidió\", \"title\":\"<b>Decidió - 2 mentions</b>\", \"font\":{\"size\":50}},{\"id\":1843, \"group\":5, \"label\":\"Reyes Magos\", \"title\":\"<b>Reyes Magos - 8 mentions</b>\", \"font\":{\"size\":50}},{\"id\":40629, \"group\":1, \"label\":\"Invitó\", \"title\":\"<b>Invitó - 2 mentions</b>\", \"font\":{\"size\":50}},{\"id\":6967, \"group\":8, \"label\":\"Pueblo\", \"title\":\"<b>Pueblo - 20 mentions</b>\", \"font\":{\"size\":50}},{\"id\":5851873, \"group\":6, \"label\":\"Derivado De Escándalos\", \"title\":\"<b>Derivado De Escándalos - 2 mentions</b>\", \"font\":{\"size\":50}},{\"id\":4923, \"group\":1, \"label\":\"Partidos Políticos\", \"title\":\"<b>Partidos Políticos - 22 mentions</b>\", \"font\":{\"size\":50}},{\"id\":4155, \"group\":9, \"label\":\"Ley\", \"title\":\"<b>Ley - 13 mentions</b>\", \"font\":{\"size\":50}},{\"id\":5709675, \"group\":5, \"label\":\"Conveniencia Del Status\", \"title\":\"<b>Conveniencia Del Status - 8 mentions</b>\", \"font\":{\"size\":50}},{\"id\":3646091, \"group\":8, \"label\":\"Noalaparalela\", \"title\":\"<b>Noalaparalela - 17 mentions</b>\", \"font\":{\"size\":50}},{\"id\":249149, \"group\":1, \"label\":\"Reformada\", \"title\":\"<b>Reformada - 3 mentions</b>\", \"font\":{\"size\":50}},{\"id\":809651, \"group\":1, \"label\":\"Revisada\", \"title\":\"<b>Revisada - 4 mentions</b>\", \"font\":{\"size\":50}},{\"id\":933583, \"group\":8, \"label\":\"Paralela\", \"title\":\"<b>Paralela - 29 mentions</b>\", \"font\":{\"size\":50}},{\"id\":451, \"group\":2, \"label\":\"Hora\", \"title\":\"<b>Hora - 3 mentions</b>\", \"font\":{\"size\":50}},{\"id\":28099, \"group\":7, \"label\":\"App\", \"title\":\"<b>App - 27 mentions</b>\", \"font\":{\"size\":50}},{\"id\":37189, \"group\":1, \"label\":\"Miembro Del Movimiento\", \"title\":\"<b>Miembro Del Movimiento - 2 mentions</b>\", \"font\":{\"size\":50}},{\"id\":2605679, \"group\":9, \"label\":\"Vista Fiscal\", \"title\":\"<b>Vista Fiscal - 4 mentions</b>\", \"font\":{\"size\":50}},{\"id\":4809, \"group\":0, \"label\":\"Corte Suprema\", \"title\":\"<b>Corte Suprema - 10 mentions</b>\", \"font\":{\"size\":50}},{\"id\":713, \"group\":0, \"label\":\"Entiende\", \"title\":\"<b>Entiende - 1 mentions</b>\", \"font\":{\"size\":50}},{\"id\":4171, \"group\":9, \"label\":\"Diputados\", \"title\":\"<b>Diputados - 13 mentions</b>\", \"font\":{\"size\":50}},{\"id\":5581, \"group\":6, \"label\":\"Justicia\", \"title\":\"<b>Justicia - 17 mentions</b>\", \"font\":{\"size\":100}},{\"id\":202705, \"group\":5, \"label\":\"Status Quo\", \"title\":\"<b>Status Quo - 14 mentions</b>\", \"font\":{\"size\":100}},{\"id\":375383, \"group\":6, \"label\":\"Prohiba\", \"title\":\"<b>Prohiba - 2 mentions</b>\", \"font\":{\"size\":50}},{\"id\":166485, \"group\":0, \"label\":\"Arquesio Arias\", \"title\":\"<b>Arquesio Arias - 14 mentions</b>\", \"font\":{\"size\":100}},{\"id\":54875, \"group\":2, \"label\":\"Asamblea Constituyente\", \"title\":\"<b>Asamblea Constituyente - 58 mentions</b>\", \"font\":{\"size\":100}},{\"id\":10331, \"group\":9, \"label\":\"Magistrados\", \"title\":\"<b>Magistrados - 4 mentions</b>\", \"font\":{\"size\":50}},{\"id\":4829, \"group\":7, \"label\":\"Favor\", \"title\":\"<b>Favor - 11 mentions</b>\", \"font\":{\"size\":50}},{\"id\":10079, \"group\":2, \"label\":\"Castillo\", \"title\":\"<b>Castillo - 3 mentions</b>\", \"font\":{\"size\":50}},{\"id\":54111, \"group\":3, \"label\":\"Pueblo Panameño\", \"title\":\"<b>Pueblo Panameño - 2 mentions</b>\", \"font\":{\"size\":50}},{\"id\":285157, \"group\":4, \"label\":\"Empresarios De Panamá\", \"title\":\"<b>Empresarios De Panamá - 22 mentions</b>\", \"font\":{\"size\":50}},{\"id\":5799611, \"group\":6, \"label\":\"Juncá\", \"title\":\"<b>Juncá - 2 mentions</b>\", \"font\":{\"size\":50}},{\"id\":4581, \"group\":1, \"label\":\"Administración Pública\", \"title\":\"<b>Administración Pública - 2 mentions</b>\", \"font\":{\"size\":50}},{\"id\":10213, \"group\":3, \"label\":\"Impunidad\", \"title\":\"<b>Impunidad - 10 mentions</b>\", \"font\":{\"size\":50}},{\"id\":1556735, \"group\":7, \"label\":\"Constituyente Paralela\", \"title\":\"<b>Constituyente Paralela - 60 mentions</b>\", \"font\":{\"size\":100}},{\"id\":2153, \"group\":6, \"label\":\"Enfermedad\", \"title\":\"<b>Enfermedad - 1 mentions</b>\", \"font\":{\"size\":50}},{\"id\":55021, \"group\":8, \"label\":\"Constituyente\", \"title\":\"<b>Constituyente - 140 mentions</b>\", \"font\":{\"size\":100}},{\"id\":24815, \"group\":6, \"label\":\"Libros\", \"title\":\"<b>Libros - 11 mentions</b>\", \"font\":{\"size\":50}},{\"id\":5609381, \"group\":6, \"label\":\"Jerga Popular\", \"title\":\"<b>Jerga Popular - 2 mentions</b>\", \"font\":{\"size\":50}},{\"id\":674939, \"group\":1, \"label\":\"Enorme Labor\", \"title\":\"<b>Enorme Labor - 3 mentions</b>\", \"font\":{\"size\":50}},{\"id\":497, \"group\":3, \"label\":\"Gobierno\", \"title\":\"<b>Gobierno - 12 mentions</b>\", \"font\":{\"size\":50}},{\"id\":7921, \"group\":9, \"label\":\"Asamblea\", \"title\":\"<b>Asamblea - 11 mentions</b>\", \"font\":{\"size\":50}},{\"id\":1651, \"group\":0, \"label\":\"Gente\", \"title\":\"<b>Gente - 14 mentions</b>\", \"font\":{\"size\":100}},{\"id\":2035, \"group\":2, \"label\":\"Congreso\", \"title\":\"<b>Congreso - 13 mentions</b>\", \"font\":{\"size\":50}},{\"id\":105589, \"group\":1, \"label\":\"Movimiento Ciudadano\", \"title\":\"<b>Movimiento Ciudadano - 54 mentions</b>\", \"font\":{\"size\":100}},{\"id\":3024345, \"group\":2, \"label\":\"Involucráramos\", \"title\":\"<b>Involucráramos - 3 mentions</b>\", \"font\":{\"size\":50}},{\"id\":2555, \"group\":0, \"label\":\"Dejen\", \"title\":\"<b>Dejen - 1 mentions</b>\", \"font\":{\"size\":50}},{\"id\":4091, \"group\":8, \"label\":\"Panamá\", \"title\":\"<b>Panamá - 39 mentions</b>\", \"font\":{\"size\":50}}]"]
-},
-{
-  dimID: "edges",
-  metricID: ["[{\"from\":1651, \"to\":166485, \"value\":1, \"title\":\"1 mentions\"},{\"from\":3983, \"to\":497, \"value\":2, \"title\":\"2 mentions\"},{\"from\":105589, \"to\":37189, \"value\":2, \"title\":\"2 mentions\"},{\"from\":155, \"to\":149633, \"value\":12, \"title\":\"12 mentions\"},{\"from\":933583, \"to\":55021, \"value\":6, \"title\":\"6 mentions\"},{\"from\":5581, \"to\":4010405, \"value\":2, \"title\":\"2 mentions\"},{\"from\":35079, \"to\":8829, \"value\":1, \"title\":\"1 mentions\"},{\"from\":285157, \"to\":21011, \"value\":10, \"title\":\"10 mentions\"},{\"from\":35079, \"to\":8831, \"value\":1, \"title\":\"1 mentions\"},{\"from\":4553, \"to\":145397, \"value\":2, \"title\":\"2 mentions\"},{\"from\":24815, \"to\":5799611, \"value\":2, \"title\":\"2 mentions\"},{\"from\":3646091, \"to\":171039, \"value\":6, \"title\":\"6 mentions\"},{\"from\":149633, \"to\":285157, \"value\":17, \"title\":\"17 mentions\"},{\"from\":171039, \"to\":933583, \"value\":6, \"title\":\"6 mentions\"},{\"from\":4310705, \"to\":4553, \"value\":2, \"title\":\"2 mentions\"},{\"from\":10213, \"to\":3983, \"value\":2, \"title\":\"2 mentions\"},{\"from\":4091, \"to\":55021, \"value\":3, \"title\":\"3 mentions\"},{\"from\":1903747, \"to\":89081, \"value\":2, \"title\":\"2 mentions\"},{\"from\":4171, \"to\":4155, \"value\":1, \"title\":\"1 mentions\"},{\"from\":35079, \"to\":1385, \"value\":1, \"title\":\"1 mentions\"},{\"from\":1903747, \"to\":536577, \"value\":1, \"title\":\"1 mentions\"},{\"from\":105589, \"to\":4923, \"value\":1, \"title\":\"1 mentions\"},{\"from\":1903747, \"to\":145397, \"value\":2, \"title\":\"2 mentions\"},{\"from\":1903747, \"to\":291585, \"value\":1, \"title\":\"1 mentions\"},{\"from\":24815, \"to\":375383, \"value\":2, \"title\":\"2 mentions\"},{\"from\":35079, \"to\":4310705, \"value\":2, \"title\":\"2 mentions\"},{\"from\":202705, \"to\":1843, \"value\":8, \"title\":\"8 mentions\"},{\"from\":4829, \"to\":47259, \"value\":3, \"title\":\"3 mentions\"},{\"from\":28099, \"to\":200623, \"value\":5, \"title\":\"5 mentions\"},{\"from\":1903747, \"to\":315659, \"value\":1, \"title\":\"1 mentions\"},{\"from\":29307, \"to\":495505, \"value\":5, \"title\":\"5 mentions\"},{\"from\":82469, \"to\":202705, \"value\":8, \"title\":\"8 mentions\"},{\"from\":4553, \"to\":2744051, \"value\":1, \"title\":\"1 mentions\"},{\"from\":7921, \"to\":4155, \"value\":1, \"title\":\"1 mentions\"},{\"from\":47259, \"to\":200623, \"value\":7, \"title\":\"7 mentions\"},{\"from\":171039, \"to\":4091, \"value\":5, \"title\":\"5 mentions\"},{\"from\":3646091, \"to\":4091, \"value\":2, \"title\":\"2 mentions\"},{\"from\":4553, \"to\":32279, \"value\":1, \"title\":\"1 mentions\"},{\"from\":4809, \"to\":168977, \"value\":3, \"title\":\"3 mentions\"},{\"from\":5581, \"to\":5851873, \"value\":2, \"title\":\"2 mentions\"},{\"from\":4553, \"to\":1264675, \"value\":5, \"title\":\"5 mentions\"},{\"from\":4553, \"to\":306463, \"value\":2, \"title\":\"2 mentions\"},{\"from\":4171, \"to\":10331, \"value\":4, \"title\":\"4 mentions\"},{\"from\":149633, \"to\":21011, \"value\":16, \"title\":\"16 mentions\"},{\"from\":1903747, \"to\":306463, \"value\":2, \"title\":\"2 mentions\"},{\"from\":28099, \"to\":4829, \"value\":3, \"title\":\"3 mentions\"},{\"from\":4829, \"to\":200623, \"value\":3, \"title\":\"3 mentions\"},{\"from\":7921, \"to\":4171, \"value\":4, \"title\":\"4 mentions\"},{\"from\":3646091, \"to\":55021, \"value\":1, \"title\":\"1 mentions\"},{\"from\":4553, \"to\":112933, \"value\":2, \"title\":\"2 mentions\"},{\"from\":54875, \"to\":10079, \"value\":3, \"title\":\"3 mentions\"},{\"from\":1903747, \"to\":112933, \"value\":2, \"title\":\"2 mentions\"},{\"from\":82469, \"to\":1843, \"value\":8, \"title\":\"8 mentions\"},{\"from\":166485, \"to\":168977, \"value\":2, \"title\":\"2 mentions\"},{\"from\":82469, \"to\":239147, \"value\":8, \"title\":\"8 mentions\"},{\"from\":29307, \"to\":5822853, \"value\":7, \"title\":\"7 mentions\"},{\"from\":35079, \"to\":173479, \"value\":1, \"title\":\"1 mentions\"},{\"from\":6967, \"to\":55021, \"value\":1, \"title\":\"1 mentions\"},{\"from\":35079, \"to\":2411209, \"value\":2, \"title\":\"2 mentions\"},{\"from\":202705, \"to\":239147, \"value\":8, \"title\":\"8 mentions\"},{\"from\":105589, \"to\":674939, \"value\":3, \"title\":\"3 mentions\"},{\"from\":4310705, \"to\":64371, \"value\":1, \"title\":\"1 mentions\"},{\"from\":47259, \"to\":28099, \"value\":6, \"title\":\"6 mentions\"},{\"from\":4091, \"to\":6967, \"value\":1, \"title\":\"1 mentions\"},{\"from\":5581, \"to\":5609381, \"value\":2, \"title\":\"2 mentions\"},{\"from\":1903747, \"to\":10311, \"value\":1, \"title\":\"1 mentions\"},{\"from\":172187, \"to\":809651, \"value\":4, \"title\":\"4 mentions\"},{\"from\":4553, \"to\":118099, \"value\":1, \"title\":\"1 mentions\"},{\"from\":4809, \"to\":166485, \"value\":3, \"title\":\"3 mentions\"},{\"from\":166485, \"to\":5781185, \"value\":2, \"title\":\"2 mentions\"},{\"from\":4310705, \"to\":1385, \"value\":1, \"title\":\"1 mentions\"},{\"from\":1903747, \"to\":74829, \"value\":1, \"title\":\"1 mentions\"},{\"from\":155, \"to\":285157, \"value\":8, \"title\":\"8 mentions\"},{\"from\":7921, \"to\":5251, \"value\":4, \"title\":\"4 mentions\"},{\"from\":3646091, \"to\":6967, \"value\":2, \"title\":\"2 mentions\"},{\"from\":3983, \"to\":54111, \"value\":2, \"title\":\"2 mentions\"},{\"from\":933583, \"to\":4091, \"value\":3, \"title\":\"3 mentions\"},{\"from\":7921, \"to\":2605679, \"value\":4, \"title\":\"4 mentions\"},{\"from\":4553, \"to\":24415, \"value\":1, \"title\":\"1 mentions\"},{\"from\":1651, \"to\":713, \"value\":1, \"title\":\"1 mentions\"},{\"from\":28099, \"to\":1556735, \"value\":3, \"title\":\"3 mentions\"},{\"from\":4553, \"to\":631643, \"value\":1, \"title\":\"1 mentions\"},{\"from\":54875, \"to\":51615, \"value\":2, \"title\":\"2 mentions\"},{\"from\":4310705, \"to\":10311, \"value\":1, \"title\":\"1 mentions\"},{\"from\":35079, \"to\":89081, \"value\":1, \"title\":\"1 mentions\"},{\"from\":4553, \"to\":1903747, \"value\":2, \"title\":\"2 mentions\"},{\"from\":4923, \"to\":172187, \"value\":1, \"title\":\"1 mentions\"},{\"from\":4310705, \"to\":74829, \"value\":1, \"title\":\"1 mentions\"},{\"from\":200623, \"to\":1556735, \"value\":6, \"title\":\"6 mentions\"},{\"from\":2035, \"to\":54875, \"value\":8, \"title\":\"8 mentions\"},{\"from\":1903747, \"to\":4310705, \"value\":10, \"title\":\"10 mentions\"},{\"from\":6967, \"to\":171039, \"value\":2, \"title\":\"2 mentions\"},{\"from\":2035, \"to\":10079, \"value\":2, \"title\":\"2 mentions\"},{\"from\":54875, \"to\":451, \"value\":3, \"title\":\"3 mentions\"},{\"from\":35079, \"to\":5817695, \"value\":2, \"title\":\"2 mentions\"},{\"from\":10213, \"to\":3353, \"value\":2, \"title\":\"2 mentions\"},{\"from\":105589, \"to\":40629, \"value\":2, \"title\":\"2 mentions\"},{\"from\":1903747, \"to\":64371, \"value\":1, \"title\":\"1 mentions\"},{\"from\":172187, \"to\":249149, \"value\":3, \"title\":\"3 mentions\"},{\"from\":24815, \"to\":5791819, \"value\":4, \"title\":\"4 mentions\"},{\"from\":4553, \"to\":5895343, \"value\":1, \"title\":\"1 mentions\"},{\"from\":4310705, \"to\":5825699, \"value\":1, \"title\":\"1 mentions\"},{\"from\":1903747, \"to\":5825699, \"value\":1, \"title\":\"1 mentions\"},{\"from\":21011, \"to\":155, \"value\":1, \"title\":\"1 mentions\"},{\"from\":1903747, \"to\":4301513, \"value\":1, \"title\":\"1 mentions\"},{\"from\":172187, \"to\":105589, \"value\":1, \"title\":\"1 mentions\"},{\"from\":1651, \"to\":2555, \"value\":1, \"title\":\"1 mentions\"},{\"from\":47259, \"to\":1556735, \"value\":4, \"title\":\"4 mentions\"},{\"from\":933583, \"to\":3646091, \"value\":11, \"title\":\"11 mentions\"},{\"from\":35079, \"to\":112933, \"value\":2, \"title\":\"2 mentions\"},{\"from\":4310705, \"to\":112933, \"value\":2, \"title\":\"2 mentions\"},{\"from\":1903747, \"to\":2226283, \"value\":1, \"title\":\"1 mentions\"},{\"from\":4310705, \"to\":306463, \"value\":2, \"title\":\"2 mentions\"},{\"from\":54875, \"to\":3827495, \"value\":5, \"title\":\"5 mentions\"},{\"from\":4553, \"to\":173479, \"value\":1, \"title\":\"1 mentions\"},{\"from\":4310705, \"to\":291585, \"value\":1, \"title\":\"1 mentions\"},{\"from\":24815, \"to\":439591, \"value\":4, \"title\":\"4 mentions\"},{\"from\":202705, \"to\":5709675, \"value\":8, \"title\":\"8 mentions\"},{\"from\":2035, \"to\":51615, \"value\":2, \"title\":\"2 mentions\"},{\"from\":4310705, \"to\":536577, \"value\":1, \"title\":\"1 mentions\"},{\"from\":4310705, \"to\":89081, \"value\":2, \"title\":\"2 mentions\"},{\"from\":4310705, \"to\":5824105, \"value\":4, \"title\":\"4 mentions\"},{\"from\":54875, \"to\":3024345, \"value\":3, \"title\":\"3 mentions\"},{\"from\":4553, \"to\":1397943, \"value\":2, \"title\":\"2 mentions\"},{\"from\":4553, \"to\":229061, \"value\":1, \"title\":\"1 mentions\"},{\"from\":82469, \"to\":5709675, \"value\":8, \"title\":\"8 mentions\"},{\"from\":1903747, \"to\":5824105, \"value\":4, \"title\":\"4 mentions\"},{\"from\":29307, \"to\":693533, \"value\":7, \"title\":\"7 mentions\"},{\"from\":4310705, \"to\":145397, \"value\":2, \"title\":\"2 mentions\"},{\"from\":10213, \"to\":54111, \"value\":2, \"title\":\"2 mentions\"},{\"from\":54875, \"to\":83251, \"value\":2, \"title\":\"2 mentions\"},{\"from\":105589, \"to\":4581, \"value\":2, \"title\":\"2 mentions\"},{\"from\":4553, \"to\":1260505, \"value\":1, \"title\":\"1 mentions\"},{\"from\":4553, \"to\":5816985, \"value\":1, \"title\":\"1 mentions\"},{\"from\":105589, \"to\":1898423, \"value\":3, \"title\":\"3 mentions\"},{\"from\":202705, \"to\":7809, \"value\":2, \"title\":\"2 mentions\"},{\"from\":4553, \"to\":5827217, \"value\":1, \"title\":\"1 mentions\"},{\"from\":4553, \"to\":4825, \"value\":2, \"title\":\"2 mentions\"},{\"from\":497, \"to\":15109, \"value\":2, \"title\":\"2 mentions\"},{\"from\":4310705, \"to\":4319, \"value\":1, \"title\":\"1 mentions\"},{\"from\":1903747, \"to\":4319, \"value\":1, \"title\":\"1 mentions\"},{\"from\":5581, \"to\":2153, \"value\":1, \"title\":\"1 mentions\"}]"]
-}
-    ],
-  },
-  fields: {
-    dimID: [
-      {
-        id: 'qt_nzqx6a0xvb',
-        name: 'Age Group',
-        type: 'TEXT',
-        concept: 'DIMENSION',
+        "dimID": [
+          "nodes"
+        ],
+        "metricID": [
+          "[{id:140547, group:17, label:\"Power\", title:\"Power - 2 mentions\", font:{size:50}},{id:7495799, group:1, label:\"Existencia Gracias\", title:\"Existencia Gracias - 2 mentions\", font:{size:50}},{id:7, group:2, label:\"Decirle\", title:\"Decirle - 1 mentions\", font:{size:50}},{id:7495803, group:1, label:\"Paria Politico\", title:\"Paria Politico - 2 mentions\", font:{size:50}},{id:7454847, group:4, label:\"Inventaron Pruebas\", title:\"Inventaron Pruebas - 1 mentions\", font:{size:50}},{id:1519367, group:14, label:\"Empresas De Motta\", title:\"Empresas De Motta - 1 mentions\", font:{size:50}},{id:34833, group:5, label:\"Intereses\", title:\"Intereses - 1 mentions\", font:{size:50}},{id:160791, group:2, label:\"Pib\", title:\"Pib - 1 mentions\", font:{size:50}},{id:818713, group:2, label:\"Mala Distribución\", title:\"Mala Distribución - 1 mentions\", font:{size:50}},{id:7576171, group:2, label:\"Amigos Incluye\", title:\"Amigos Incluye - 1 mentions\", font:{size:50}},{id:4121, group:7, label:\"Orden\", title:\"Orden - 1 mentions\", font:{size:50}},{id:7491435, group:8, label:\"Tvn-investiga\", title:\"Tvn-investiga - 2 mentions\", font:{size:50}},{id:192031, group:8, label:\"Ernesto Pérez\", title:\"Ernesto Pérez - 2 mentions\", font:{size:50}},{id:7576173, group:2, label:\"Incluye Motta\", title:\"Incluye Motta - 1 mentions\", font:{size:50}},{id:198689, group:3, label:\"Stanley Motta\", title:\"Stanley Motta - 9 mentions\", font:{size:100}},{id:396579, group:6, label:\"Evasión Fiscal\", title:\"Evasión Fiscal - 1 mentions\", font:{size:50}},{id:5931, group:2, label:\"Cambien\", title:\"Cambien - 1 mentions\", font:{size:50}},{id:85549, group:9, label:\"Empleados\", title:\"Empleados - 1 mentions\", font:{size:50}},{id:213549, group:20, label:\"Panamá Viejo\", title:\"Panamá Viejo - 2 mentions\", font:{size:50}},{id:155443, group:5, label:\"Concesión De Ppc\", title:\"Concesión De Ppc - 1 mentions\", font:{size:50}},{id:7541067, group:9, label:\"Donante De Nito\", title:\"Donante De Nito - 1 mentions\", font:{size:50}},{id:172859, group:8, label:\"Puerto De Manzanillo\", title:\"Puerto De Manzanillo - 5 mentions\", font:{size:100}},{id:7541065, group:9, label:\"Salirte Del Guión\", title:\"Salirte Del Guión - 1 mentions\", font:{size:50}},{id:7509583, group:5, label:\"Sanguijuelas Buscando\", title:\"Sanguijuelas Buscando - 1 mentions\", font:{size:50}},{id:7541069, group:9, label:\"Ocurra Salirte\", title:\"Ocurra Salirte - 1 mentions\", font:{size:50}},{id:7509581, group:5, label:\"Montón De Sanguijuelas\", title:\"Montón De Sanguijuelas - 1 mentions\", font:{size:50}},{id:315195, group:12, label:\"Disgustado\", title:\"Disgustado - 1 mentions\", font:{size:50}},{id:10823, group:9, label:\"Gatos\", title:\"Gatos - 1 mentions\", font:{size:50}},{id:7603001, group:14, label:\"Dinero De Expresidentes\", title:\"Dinero De Expresidentes - 1 mentions\", font:{size:50}},{id:94803, group:20, label:\"Medidas De Bioseguridad\", title:\"Medidas De Bioseguridad - 3 mentions\", font:{size:50}},{id:672857, group:20, label:\"Museo De Botones\", title:\"Museo De Botones - 3 mentions\", font:{size:50}},{id:10069, group:7, label:\"Prohibido\", title:\"Prohibido - 1 mentions\", font:{size:50}},{id:320339, group:5, label:\"Balladares\", title:\"Balladares - 2 mentions\", font:{size:100}},{id:2185081, group:17, label:\"Frenadeso Noticias\", title:\"Frenadeso Noticias - 2 mentions\", font:{size:50}},{id:198491, group:15, label:\"Fundación Alberto\", title:\"Fundación Alberto - 3 mentions\", font:{size:100}},{id:198489, group:15, label:\"Supérate Fundación\", title:\"Supérate Fundación - 3 mentions\", font:{size:100}},{id:25947, group:8, label:\"Cuál\", title:\"Cuál - 2 mentions\", font:{size:50}},{id:117855, group:12, label:\"Concesión\", title:\"Concesión - 1 mentions\", font:{size:50}},{id:7267, group:3, label:\"Lombana\", title:\"Lombana - 6 mentions\", font:{size:50}},{id:6512651, group:20, label:\"Museos Participantes\", title:\"Museos Participantes - 4 mentions\", font:{size:100}},{id:10601, group:4, label:\"Perro\", title:\"Perro - 1 mentions\", font:{size:50}},{id:3920471, group:4, label:\"Gringos Inventaron\", title:\"Gringos Inventaron - 1 mentions\", font:{size:50}},{id:237167, group:5, label:\"Empresas Familiares\", title:\"Empresas Familiares - 1 mentions\", font:{size:50}},{id:3892299, group:17, label:\"Alfredo Alemán\", title:\"Alfredo Alemán - 3 mentions\", font:{size:100}},{id:2556247, group:17, label:\"Sociedad Jurídica\", title:\"Sociedad Jurídica - 2 mentions\", font:{size:50}},{id:696191, group:15, label:\"Supérate Merlet\", title:\"Supérate Merlet - 3 mentions\", font:{size:100}},{id:1335151, group:1, label:\"Varelistas\", title:\"Varelistas - 2 mentions\", font:{size:50}},{id:7809, group:1, label:\"Prd\", title:\"Prd - 3 mentions\", font:{size:100}},{id:7354355, group:9, label:\"Compre Motta\", title:\"Compre Motta - 1 mentions\", font:{size:50}},{id:59783, group:6, label:\"Endara\", title:\"Endara - 1 mentions\", font:{size:50}},{id:232841, group:1, label:\"Sector Económico\", title:\"Sector Económico - 1 mentions\", font:{size:50}},{id:670337, group:12, label:\"Grupo Motta\", title:\"Grupo Motta - 2 mentions\", font:{size:100}},{id:696193, group:15, label:\"Supérate Grupo\", title:\"Supérate Grupo - 3 mentions\", font:{size:100}},{id:215439, group:6, label:\"Stanleymotta\", title:\"Stanleymotta - 4 mentions\", font:{size:100}},{id:833433, group:9, label:\"Línea Editorial\", title:\"Línea Editorial - 1 mentions\", font:{size:50}},{id:152213, group:13, label:\"Clan Motta\", title:\"Clan Motta - 2 mentions\", font:{size:100}},{id:158107, group:3, label:\"Martinelli\", title:\"Martinelli - 1 mentions\", font:{size:50}},{id:19865, group:5, label:\"Negra\", title:\"Negra - 1 mentions\", font:{size:50}},{id:155, group:2, label:\"País\", title:\"País - 2 mentions\", font:{size:100}},{id:118173, group:11, label:\"Motta\", title:\"Motta - 22 mentions\", font:{size:100}},{id:216995, group:9, label:\"González Revilla\", title:\"González Revilla - 2 mentions\", font:{size:100}},{id:38305, group:4, label:\"Entendí\", title:\"Entendí - 2 mentions\", font:{size:100}},{id:82595, group:5, label:\"Creadas\", title:\"Creadas - 1 mentions\", font:{size:50}},{id:4005, group:14, label:\"Cuentas\", title:\"Cuentas - 1 mentions\", font:{size:50}},{id:113831, group:14, label:\"Aparezcan\", title:\"Aparezcan - 1 mentions\", font:{size:50}},{id:3089031, group:17, label:\"Generadora De Gatún\", title:\"Generadora De Gatún - 3 mentions\", font:{size:100}},{id:813991, group:12, label:\"Banco Continental\", title:\"Banco Continental - 1 mentions\", font:{size:50}},{id:153513, group:14, label:\"Politicos Corruptos\", title:\"Politicos Corruptos - 1 mentions\", font:{size:50}},{id:173, group:3, label:\"Años\", title:\"Años - 2 mentions\", font:{size:50}},{id:27567, group:7, label:\"Acuerda\", title:\"Acuerda - 1 mentions\", font:{size:50}},{id:41907, group:13, label:\"Distribución\", title:\"Distribución - 1 mentions\", font:{size:50}},{id:315057, group:1, label:\"Realizando Metas\", title:\"Realizando Metas - 2 mentions\", font:{size:50}},{id:348351, group:12, label:\"Matilde Gómez\", title:\"Matilde Gómez - 1 mentions\", font:{size:50}},{id:1891239, group:9, label:\"Privatice\", title:\"Privatice - 1 mentions\", font:{size:50}},{id:17083, group:13, label:\"Dale\", title:\"Dale - 1 mentions\", font:{size:50}},{id:7464883, group:7, label:\"Serie Pablo\", title:\"Serie Pablo - 1 mentions\", font:{size:50}},{id:31427, group:6, label:\"Soñé\", title:\"Soñé - 1 mentions\", font:{size:50}},{id:348353, group:12, label:\"Ana Matilde\", title:\"Ana Matilde - 1 mentions\", font:{size:50}},{id:31943, group:6, label:\"Spa\", title:\"Spa - 1 mentions\", font:{size:50}},{id:4551, group:13, label:\"Control\", title:\"Control - 1 mentions\", font:{size:50}},{id:125387, group:8, label:\"Ports Company\", title:\"Ports Company - 3 mentions\", font:{size:50}},{id:7377341, group:6, label:\"Freddiehumbert\", title:\"Freddiehumbert - 1 mentions\", font:{size:50}},{id:3876085, group:3, label:\"Órdenes De Stanley\", title:\"Órdenes De Stanley - 2 mentions\", font:{size:50}},{id:1007553, group:6, label:\"Enriquecimiento Ilícito\", title:\"Enriquecimiento Ilícito - 1 mentions\", font:{size:50}},{id:202705, group:6, label:\"Status Quo\", title:\"Status Quo - 1 mentions\", font:{size:50}},{id:260567, group:2, label:\"Familia Motta\", title:\"Familia Motta - 1 mentions\", font:{size:50}},{id:65749, group:11, label:\"Guatemala\", title:\"Guatemala - 2 mentions\", font:{size:50}},{id:356829, group:14, label:\"Empresas Motta\", title:\"Empresas Motta - 1 mentions\", font:{size:50}},{id:124381, group:5, label:\"Puertos De Balboa\", title:\"Puertos De Balboa - 1 mentions\", font:{size:50}},{id:3688421, group:6, label:\"Fué Llamado\", title:\"Fué Llamado - 1 mentions\", font:{size:50}},{id:51933, group:7, label:\"Patrón\", title:\"Patrón - 2 mentions\", font:{size:100}},{id:477, group:14, label:\"Dinero\", title:\"Dinero - 1 mentions\", font:{size:50}},{id:254179, group:11, label:\"Movin\", title:\"Movin - 4 mentions\", font:{size:50}},{id:942575, group:20, label:\"Viejo Ministerio\", title:\"Viejo Ministerio - 2 mentions\", font:{size:50}},{id:32225, group:14, label:\"Utilizadas\", title:\"Utilizadas - 2 mentions\", font:{size:100}},{id:813039, group:6, label:\"Principales Culpables\", title:\"Principales Culpables - 1 mentions\", font:{size:50}},{id:7437209, group:4, label:\"Lógica Deducción\", title:\"Lógica Deducción - 1 mentions\", font:{size:50}},{id:138731, group:3, label:\"Nito\", title:\"Nito - 4 mentions\", font:{size:50}},{id:7437211, group:4, label:\"Juancito Trucupey\", title:\"Juancito Trucupey - 1 mentions\", font:{size:50}},{id:3563, group:13, label:\"Pierde\", title:\"Pierde - 1 mentions\", font:{size:50}},{id:765415, group:7, label:\"Eslogan\", title:\"Eslogan - 1 mentions\", font:{size:50}},{id:37359, group:12, label:\"Lavado De Dinero\", title:\"Lavado De Dinero - 1 mentions\", font:{size:50}},{id:7454849, group:4, label:\"Millones Cautelados\", title:\"Millones Cautelados - 1 mentions\", font:{size:50}},{id:497, group:2, label:\"Gobierno\", title:\"Gobierno - 1 mentions\", font:{size:50}},{id:7454851, group:4, label:\"Pruebas Mandados\", title:\"Pruebas Mandados - 1 mentions\", font:{size:50}},{id:1633263, group:8, label:\"Don Motta\", title:\"Don Motta - 2 mentions\", font:{size:50}},{id:4091, group:11, label:\"Panamá\", title:\"Panamá - 4 mentions\", font:{size:50}},{id:2342365, group:4, label:\"Gato Del Vecino\", title:\"Gato Del Vecino - 1 mentions\", font:{size:50}},{id:767, group:3, label:\"Junio\", title:\"Junio - 1 mentions\", font:{size:50}}]"
+        ]
       },
-    ],
-    metricID: [
       {
-        id: 'qt_8isx6a0xvb',
-        name: 'Population',
-        type: 'NUMBER',
-        concept: 'METRIC',
-      },
-    ],
+        "dimID": [
+          "edges"
+        ],
+        "metricID": [
+          "[{from:1633263, to:25947, value:1, title:\"1 mentions\"},{from:25947, to:172859, value:2, title:\"2 mentions\"},{from:94803, to:672857, value:2, title:\"2 mentions\"},{from:216995, to:7541067, value:1, title:\"1 mentions\"},{from:192031, to:125387, value:2, title:\"2 mentions\"},{from:320339, to:7509581, value:1, title:\"1 mentions\"},{from:6512651, to:942575, value:2, title:\"2 mentions\"},{from:216995, to:7541069, value:1, title:\"1 mentions\"},{from:138731, to:198689, value:3, title:\"3 mentions\"},{from:140547, to:3892299, value:2, title:\"2 mentions\"},{from:173, to:7267, value:1, title:\"1 mentions\"},{from:320339, to:7509583, value:1, title:\"1 mentions\"},{from:215439, to:7377341, value:1, title:\"1 mentions\"},{from:7809, to:315057, value:1, title:\"1 mentions\"},{from:2556247, to:2185081, value:2, title:\"2 mentions\"},{from:140547, to:2556247, value:2, title:\"2 mentions\"},{from:3892299, to:2185081, value:2, title:\"2 mentions\"},{from:216995, to:7541065, value:1, title:\"1 mentions\"},{from:942575, to:213549, value:2, title:\"2 mentions\"},{from:32225, to:1519367, value:1, title:\"1 mentions\"},{from:38305, to:2342365, value:1, title:\"1 mentions\"},{from:51933, to:27567, value:1, title:\"1 mentions\"},{from:198689, to:3876085, value:2, title:\"2 mentions\"},{from:198491, to:696191, value:3, title:\"3 mentions\"},{from:198491, to:696193, value:3, title:\"3 mentions\"},{from:672857, to:6512651, value:3, title:\"3 mentions\"},{from:320339, to:124381, value:1, title:\"1 mentions\"},{from:198689, to:173, value:1, title:\"1 mentions\"},{from:315057, to:1335151, value:2, title:\"2 mentions\"},{from:696191, to:198489, value:3, title:\"3 mentions\"},{from:152213, to:41907, value:1, title:\"1 mentions\"},{from:2556247, to:3089031, value:2, title:\"2 mentions\"},{from:198689, to:158107, value:1, title:\"1 mentions\"},{from:672857, to:942575, value:2, title:\"2 mentions\"},{from:38305, to:7454847, value:1, title:\"1 mentions\"},{from:3892299, to:3089031, value:3, title:\"3 mentions\"},{from:38305, to:7454851, value:1, title:\"1 mentions\"},{from:1335151, to:7495799, value:2, title:\"2 mentions\"},{from:38305, to:7454849, value:1, title:\"1 mentions\"},{from:1335151, to:7495803, value:2, title:\"2 mentions\"},{from:3089031, to:2185081, value:2, title:\"2 mentions\"},{from:320339, to:34833, value:1, title:\"1 mentions\"},{from:6512651, to:213549, value:2, title:\"2 mentions\"},{from:94803, to:6512651, value:3, title:\"3 mentions\"},{from:670337, to:813991, value:1, title:\"1 mentions\"},{from:25947, to:7491435, value:1, title:\"1 mentions\"},{from:51933, to:765415, value:1, title:\"1 mentions\"},{from:172859, to:192031, value:1, title:\"1 mentions\"},{from:138731, to:3876085, value:1, title:\"1 mentions\"},{from:38305, to:7437211, value:1, title:\"1 mentions\"},{from:155, to:260567, value:1, title:\"1 mentions\"},{from:38305, to:7437209, value:1, title:\"1 mentions\"},{from:670337, to:348351, value:1, title:\"1 mentions\"},{from:215439, to:396579, value:1, title:\"1 mentions\"},{from:2185081, to:140547, value:2, title:\"2 mentions\"},{from:198489, to:696193, value:3, title:\"3 mentions\"},{from:2556247, to:3892299, value:2, title:\"2 mentions\"},{from:670337, to:348353, value:1, title:\"1 mentions\"},{from:216995, to:833433, value:1, title:\"1 mentions\"},{from:215439, to:3688421, value:1, title:\"1 mentions\"},{from:1633263, to:7491435, value:1, title:\"1 mentions\"},{from:670337, to:37359, value:1, title:\"1 mentions\"},{from:215439, to:813039, value:1, title:\"1 mentions\"},{from:138731, to:767, value:1, title:\"1 mentions\"},{from:155, to:497, value:1, title:\"1 mentions\"},{from:198491, to:198489, value:3, title:\"3 mentions\"},{from:155, to:7576173, value:1, title:\"1 mentions\"},{from:670337, to:117855, value:1, title:\"1 mentions\"},{from:155, to:7576171, value:1, title:\"1 mentions\"},{from:51933, to:4121, value:1, title:\"1 mentions\"},{from:94803, to:942575, value:2, title:\"2 mentions\"},{from:118173, to:4091, value:4, title:\"4 mentions\"},{from:215439, to:202705, value:1, title:\"1 mentions\"},{from:696193, to:696191, value:3, title:\"3 mentions\"},{from:155, to:7, value:1, title:\"1 mentions\"},{from:155, to:818713, value:1, title:\"1 mentions\"},{from:172859, to:7491435, value:2, title:\"2 mentions\"},{from:320339, to:155443, value:1, title:\"1 mentions\"},{from:118173, to:254179, value:4, title:\"4 mentions\"},{from:155, to:160791, value:1, title:\"1 mentions\"},{from:315057, to:7495799, value:2, title:\"2 mentions\"},{from:118173, to:65749, value:2, title:\"2 mentions\"},{from:7809, to:7495799, value:1, title:\"1 mentions\"},{from:216995, to:10823, value:1, title:\"1 mentions\"},{from:215439, to:1007553, value:1, title:\"1 mentions\"},{from:216995, to:1891239, value:1, title:\"1 mentions\"},{from:320339, to:237167, value:1, title:\"1 mentions\"},{from:216995, to:7354355, value:1, title:\"1 mentions\"},{from:3089031, to:140547, value:2, title:\"2 mentions\"},{from:32225, to:4005, value:1, title:\"1 mentions\"},{from:7267, to:138731, value:1, title:\"1 mentions\"},{from:125387, to:172859, value:1, title:\"1 mentions\"},{from:315057, to:7495803, value:2, title:\"2 mentions\"},{from:7809, to:7495803, value:1, title:\"1 mentions\"},{from:155, to:5931, value:1, title:\"1 mentions\"},{from:215439, to:31427, value:1, title:\"1 mentions\"},{from:32225, to:113831, value:1, title:\"1 mentions\"},{from:32225, to:153513, value:1, title:\"1 mentions\"},{from:32225, to:7603001, value:1, title:\"1 mentions\"},{from:38305, to:10601, value:1, title:\"1 mentions\"},{from:51933, to:7464883, value:1, title:\"1 mentions\"},{from:172859, to:1633263, value:2, title:\"2 mentions\"},{from:215439, to:31943, value:1, title:\"1 mentions\"},{from:51933, to:10069, value:1, title:\"1 mentions\"},{from:1335151, to:7809, value:1, title:\"1 mentions\"},{from:32225, to:356829, value:1, title:\"1 mentions\"},{from:94803, to:213549, value:2, title:\"2 mentions\"},{from:216995, to:85549, value:1, title:\"1 mentions\"},{from:152213, to:17083, value:1, title:\"1 mentions\"},{from:32225, to:477, value:1, title:\"1 mentions\"},{from:38305, to:3920471, value:1, title:\"1 mentions\"},{from:670337, to:315195, value:1, title:\"1 mentions\"},{from:152213, to:4551, value:1, title:\"1 mentions\"},{from:198689, to:767, value:1, title:\"1 mentions\"},{from:213549, to:672857, value:2, title:\"2 mentions\"},{from:320339, to:82595, value:1, title:\"1 mentions\"},{from:7809, to:232841, value:1, title:\"1 mentions\"},{from:320339, to:19865, value:1, title:\"1 mentions\"},{from:215439, to:59783, value:1, title:\"1 mentions\"},{from:152213, to:3563, value:1, title:\"1 mentions\"}]"
+        ]
+      }
+    ]
   },
-  "style": {
-    "excludeWords": {
-      "value": "Nito Cortizo:NitoCortizo;Juan Diego Vásquez:JDVasquezGut",
-      "defaultValue": ""
+  "fields": {
+    "dimID": [
+      {
+        "id": "qt_cbtlgh7ckc",
+        "name": "xData",
+        "type": "TEXT",
+        "concept": "DIMENSION"
+      }
+    ],
+    "metricID": [
+      {
+        "id": "qt_yqi6um7ckc",
+        "name": "yData",
+        "type": "TEXT",
+        "concept": "DIMENSION"
+      }
+    ]
+  },
+  "style": {},
+  "theme": {
+    "themeFillColor": {
+      "color": "#eceff1",
+      "themeRef": {
+        "index": 0
+      }
+    },
+    "themeFontColor": {
+      "color": "#000000",
+      "themeRef": {
+        "index": 1
+      }
+    },
+    "themeFontFamily": "Montserrat",
+    "themeAccentFillColor": {
+      "color": "#263238",
+      "themeRef": {
+        "index": 2
+      }
+    },
+    "themeAccentFontColor": {
+      "color": "#EFEFEF",
+      "themeRef": {
+        "index": 3
+      }
+    },
+    "themeAccentFontFamily": "Roboto",
+    "themeSeriesColor": [
+      {
+        "color": "#0072f0",
+        "seriesRef": {
+          "index": 0
+        },
+        "themeRef": {
+          "index": 4
+        }
+      },
+      {
+        "color": "#00b6cb",
+        "seriesRef": {
+          "index": 1
+        },
+        "themeRef": {
+          "index": 5
+        }
+      },
+      {
+        "color": "#f10096",
+        "seriesRef": {
+          "index": 2
+        },
+        "themeRef": {
+          "index": 6
+        }
+      },
+      {
+        "color": "#f66d00",
+        "seriesRef": {
+          "index": 3
+        },
+        "themeRef": {
+          "index": 7
+        }
+      },
+      {
+        "color": "#ffa800",
+        "seriesRef": {
+          "index": 4
+        },
+        "themeRef": {
+          "index": 8
+        }
+      },
+      {
+        "color": "#7cb342",
+        "seriesRef": {
+          "index": 5
+        },
+        "themeRef": {
+          "index": 9
+        }
+      },
+      {
+        "color": "#5e35b1",
+        "seriesRef": {
+          "index": 6
+        }
+      },
+      {
+        "color": "#03a9f4",
+        "seriesRef": {
+          "index": 7
+        }
+      },
+      {
+        "color": "#ec407a",
+        "seriesRef": {
+          "index": 8
+        }
+      },
+      {
+        "color": "#ff7043",
+        "seriesRef": {
+          "index": 9
+        }
+      },
+      {
+        "color": "#737373",
+        "seriesRef": {
+          "index": 10
+        }
+      },
+      {
+        "color": "#F15A60",
+        "seriesRef": {
+          "index": 11
+        }
+      },
+      {
+        "color": "#7AC36A",
+        "seriesRef": {
+          "index": 12
+        }
+      },
+      {
+        "color": "#5A9BD4",
+        "seriesRef": {
+          "index": 13
+        }
+      },
+      {
+        "color": "#FAA75A",
+        "seriesRef": {
+          "index": 14
+        }
+      },
+      {
+        "color": "#9E67AB",
+        "seriesRef": {
+          "index": 15
+        }
+      },
+      {
+        "color": "#CE7058",
+        "seriesRef": {
+          "index": 16
+        }
+      },
+      {
+        "color": "#D77FB3",
+        "seriesRef": {
+          "index": 17
+        }
+      },
+      {
+        "color": "#81D4FA",
+        "seriesRef": {
+          "index": 18
+        }
+      },
+      {
+        "color": "#F48FB1",
+        "seriesRef": {
+          "index": 19
+        }
+      }
+    ],
+    "themeIncreaseColor": {
+      "color": "#2E7D32"
+    },
+    "themeDecreaseColor": {
+      "color": "#D32F2F"
+    },
+    "themeGridColor": {
+      "color": "#e0e0e0"
     }
   },
+  "interactions": {}
 };
-
-
-
