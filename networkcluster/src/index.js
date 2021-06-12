@@ -14,15 +14,72 @@ const visNetwork = require('vis-network');
 export const LOCAL = true;
 
 
-function createDialod(){
+const drawViz = (data) => {
+  var dialogHeader = document.createElement('div');
   var dialog = document.createElement('div');
-  dialog.id="dialog";
+  var title = document.createElement('div');
   var close = document.createElement('div');
-  close.addEventListener("click",closeDialog);
-  close.textContent="X"
-  dialog.append(close);
-  document.body.prepend(dialog);
-}
+  var content = document.createElement('div');
+  var loader = document.createElement('div');
+  
+
+
+  function createDialod(){
+    dialog.id="dialog";
+    dialogHeader.id="dialogHeader";
+    content.id="dialogContent";
+
+    title.id= "titleHeader";
+    title.textContent="Header Title";
+    close.addEventListener("click",closeDialog);
+    close.textContent="X"
+    close.id="closebtn";
+    dialogHeader.append(title);
+    dialogHeader.append(close);
+
+    loader.className="loader";
+    //content.append(loader);
+    createMention();
+    dialog.append(dialogHeader);
+    dialog.append(content);
+    document.body.prepend(dialog);
+  }
+
+  function createMention(){
+    var mention = document.createElement('div');
+    mention.className="mentions";
+
+    var mentiondatacontent = document.createElement('div');
+    mentiondatacontent.className="mentionBox";
+
+    var image = document.createElement('div');
+    image.className="imageMentionBox";
+
+    var mentiondata = document.createElement('div');
+    mentiondata.className="mentionData";
+
+    var mentiontext = document.createElement('div');
+    mentiontext.className="metiontext";
+
+    var userMention=document.createElement('p');
+    userMention.textContent="@usuario";
+
+    var userTxt=document.createElement('p');
+    userTxt.textContent="Mira Luiscito, aqui no tiene nada que ver quien es el patron, ni tiene que ver quien lo denuncia, el hecho es que es corrupción aunque sea el niño dios el que lo haga y hay que denunciarlo, aunque no vaya a pasar nada…";
+    
+    mentiontext.append(userMention);
+    mentiontext.append(userTxt);
+    
+    mentiondatacontent.append(mentiondata);
+    mentiondatacontent.append(mentiontext);
+
+    mention.append(image);
+    mention.append(mentiondatacontent);
+
+
+    content.append(mention);
+
+  }
 
 
 function showDialog(id){
@@ -36,7 +93,6 @@ function closeDialog(){
   dialog.style.display = "none";
 }
 
-const drawViz = (data) => {
 
 
   let error;
@@ -172,6 +228,8 @@ const drawViz = (data) => {
   };
   let networkG = new visNetwork.Network(container, data, options);
   networkG.on('click',(params)=>{
+  console.log("🚀 ~ file: index.js ~ line 176 ~ networkG.on ~ params", params)
+    
     let node = networkG.getNodeAt(params.pointer.DOM);
     console.log("🚀 ~ file: index.js ~ line 159 ~ networkG.on ~ node", node);
     showDialog(node);
