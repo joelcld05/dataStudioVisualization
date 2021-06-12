@@ -40,6 +40,14 @@ const drawViz = (data) => {
     loader.className="loader";
     //content.append(loader);
     createMention();
+    createMention();
+    createMention();
+    createMention();
+    createMention();
+    createMention();
+    createMention();
+    createMention();
+    
     dialog.append(dialogHeader);
     dialog.append(content);
     document.body.prepend(dialog);
@@ -47,10 +55,10 @@ const drawViz = (data) => {
 
   function createMention(){
     var mention = document.createElement('div');
-    mention.className="mentions";
+    mention.className ="mentionBox";
 
     var mentiondatacontent = document.createElement('div');
-    mentiondatacontent.className="mentionBox";
+    mentiondatacontent.className="mentionContentBox";
 
     var image = document.createElement('div');
     image.className="imageMentionBox";
@@ -75,10 +83,8 @@ const drawViz = (data) => {
 
     mention.append(image);
     mention.append(mentiondatacontent);
-
-
+    
     content.append(mention);
-
   }
 
 
