@@ -2,7 +2,12 @@ body {
   font-family: Roboto;
 }
 
-code {
+dialog {
   background-color: #fdf6e3;
   color: #586e75;
+  width: "80%";
+  height: "300px";
+  position: absolute;
+  top: 10%;
+  left: 20%;
 }

@@ -5,14 +5,36 @@ const visData = require('vis-data');
 const visNetwork = require('vis-network');
 
 
-
 // write viz code here
 /*const drawViz = (data) => {
   viz.readmeViz();
   vz.firstViz(data);
 };*/
 
-export const LOCAL = false;
+export const LOCAL = true;
+
+
+function createDialod(){
+  var dialog = document.createElement('div');
+  dialog.id="dialog";
+  var close = document.createElement('div');
+  close.addEventListener("click",closeDialog);
+  close.textContent="X"
+  dialog.append(close);
+  document.body.prepend(dialog);
+}
+
+
+function showDialog(id){
+  var dialog = document.getElementById('dialog');
+  dialog.style.display = "block";
+}
+
+
+function closeDialog(){
+  var dialog = document.getElementById('dialog');
+  dialog.style.display = "none";
+}
 
 const drawViz = (data) => {
 
@@ -22,9 +44,11 @@ const drawViz = (data) => {
 
   try {
     document.getElementById('container').remove();
+    document.getElementById('dialog').remove();
   } catch (e) {
     error = "";
   }
+  createDialod();
 
   var containerElement = document.createElement('div');
   containerElement.id = 'container';
@@ -70,6 +94,7 @@ const drawViz = (data) => {
     }
     item.font.strokeColor = "white";
     item.font.strokeWidth = 5;
+    item.opacity=0.1
     if (item.group in colorGroups) {
       item.font.color = colorGroups[item.group];
       item.color = colorGroups[item.group];
@@ -125,15 +150,13 @@ const drawViz = (data) => {
   var edges = new visData.DataSet(link);
 
   var container = document.getElementById("container");
+
+
   var data = {
     nodes: nodes,
     edges: edges,
   };
   var options = {
-    nodes: {
-      shape: "dot",
-      size: 2,
-    },
     physics: {
       forceAtlas2Based: {
         gravitationalConstant: -150,
@@ -147,8 +170,12 @@ const drawViz = (data) => {
       stabilization: { iterations: 150 },
     },
   };
-  new visNetwork.Network(container, data, options);
-
+  let networkG = new visNetwork.Network(container, data, options);
+  networkG.on('click',(params)=>{
+    let node = networkG.getNodeAt(params.pointer.DOM);
+    console.log("🚀 ~ file: index.js ~ line 159 ~ networkG.on ~ node", node);
+    showDialog(node);
+  });
 };
 
 // renders locally
