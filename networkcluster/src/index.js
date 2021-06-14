@@ -3,16 +3,13 @@ const viz = require('@google/dscc-scripts/viz/initialViz.js');
 const local = require('./localMessage.js');
 const visData = require('vis-data');
 const visNetwork = require('vis-network');
-
-
 // write viz code here
 /*const drawViz = (data) => {
   viz.readmeViz();
   vz.firstViz(data);
 };*/
 
-export const LOCAL = true;
-
+export const LOCAL = false;
 
 const drawViz = (data) => {
   var dialogHeader = document.createElement('div');
@@ -22,8 +19,6 @@ const drawViz = (data) => {
   var content = document.createElement('div');
   var loader = document.createElement('div');
   
-
-
   function createDialod(){
     dialog.id="dialog";
     dialogHeader.id="dialogHeader";
@@ -41,13 +36,7 @@ const drawViz = (data) => {
     //content.append(loader);
     createMention();
     createMention();
-    createMention();
-    createMention();
-    createMention();
-    createMention();
-    createMention();
-    createMention();
-    
+
     dialog.append(dialogHeader);
     dialog.append(content);
     document.body.prepend(dialog);
@@ -63,6 +52,11 @@ const drawViz = (data) => {
     var image = document.createElement('div');
     image.className="imageMentionBox";
 
+    var imagetag = document.createElement('img');
+    imagetag.className="imagenUsuario";
+    imagetag.src ="https://www.vippng.com/png/detail/202-2026524_person-icon-default-user-icon-png.png";
+    image.append(imagetag);
+
     var mentiondata = document.createElement('div');
     mentiondata.className="mentionData";
 
@@ -77,29 +71,37 @@ const drawViz = (data) => {
     
     mentiontext.append(userMention);
     mentiontext.append(userTxt);
-    
     mentiondatacontent.append(mentiondata);
     mentiondatacontent.append(mentiontext);
-
     mention.append(image);
     mention.append(mentiondatacontent);
-    
     content.append(mention);
   }
 
+  function interactionFilter(id) {
 
-function showDialog(id){
-  var dialog = document.getElementById('dialog');
-  dialog.style.display = "block";
-}
+    const interactionId = "tagIdInteraction";
+    const dimensionId = "qt_cbtlgh7ckc";
+    const value = id;
+    const FILTER = dscc.InteractionType.FILTER;
 
+    let interactionData = {
+      concepts: [dimensionId],
+      values: [[value]]
+    };
+    dscc.sendInteraction(interactionId, FILTER, interactionData);
 
-function closeDialog(){
-  var dialog = document.getElementById('dialog');
-  dialog.style.display = "none";
-}
+  }
 
+  function showDialog(id){
+    var dialog = document.getElementById('dialog');
+    dialog.style.display = "block";
+  }
 
+  function closeDialog(){
+    var dialog = document.getElementById('dialog');
+    dialog.style.display = "none";
+  }
 
   let error;
   let colorGroups = {};
@@ -110,7 +112,7 @@ function closeDialog(){
   } catch (e) {
     error = "";
   }
-  createDialod();
+  //createDialod();
 
   var containerElement = document.createElement('div');
   containerElement.id = 'container';
@@ -194,25 +196,20 @@ function closeDialog(){
   }
 
   for (const key in link) {
-
     if (Object.hasOwnProperty.call(replateLink, link[key].from)) {
       link[key].from = replateLink[link[key].from];
       //link.splice(key, 1);
     }
-
     if (Object.hasOwnProperty.call(replateLink, link[key].to)) {
       link[key].to = replateLink[link[key].to];
       //link.splice(key, 1);
     }
   }
 
-
-
   var nodes = new visData.DataSet(yData);
   var edges = new visData.DataSet(link);
 
   var container = document.getElementById("container");
-
 
   var data = {
     nodes: nodes,
@@ -233,12 +230,10 @@ function closeDialog(){
     },
   };
   let networkG = new visNetwork.Network(container, data, options);
-  networkG.on('click',(params)=>{
-  console.log("🚀 ~ file: index.js ~ line 176 ~ networkG.on ~ params", params)
-    
+  networkG.on('click',(params)=>{    
     let node = networkG.getNodeAt(params.pointer.DOM);
-    console.log("🚀 ~ file: index.js ~ line 159 ~ networkG.on ~ node", node);
-    showDialog(node);
+    //showDialog(node);
+    //interactionFilter(node);
   });
 };
 

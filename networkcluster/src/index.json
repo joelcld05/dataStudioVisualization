@@ -25,5 +25,11 @@
       ]
     }
   ],
+  "interactions": [
+    {
+      "id": "tagIdInteraction",
+      "supportedActions": ["FILTER"]
+    }
+  ],
   "style": [ ]
 }
