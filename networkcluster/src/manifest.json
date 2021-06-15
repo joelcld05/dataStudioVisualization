@@ -1,5 +1,5 @@
 {
-  "name": "Network Cluster Visualizations",
+  "name": "Network Cluster Dev Visualizations",
   "organization": "Network Cluster visualization",
   "description": "Network Cluster visualization package.",
   "logoUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/How_to_use_icon.svg/1200px-How_to_use_icon.svg.png",
@@ -11,13 +11,13 @@
   "devMode": true,
   "components": [
     {
-      "name": "Network Cluster Visualizations",
-      "description": "Network Cluster Visualizations",
+      "name": "Network Cluster Dev Visualizations ",
+      "description": "Network Cluster Dev Visualizations",
       "iconUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/How_to_use_icon.svg/1200px-How_to_use_icon.svg.png",
       "resource": {
-        "js": "gs://networkviz/networkcluster/prod/index.js",
-        "config": "gs://networkviz/networkcluster/prod/index.json",
-        "css": "gs://networkviz/networkcluster/prod/index.css"
+        "js": "gs://networkviz/networkcluster/dev/index.js",
+        "config": "gs://networkviz/networkcluster/dev/index.json",
+        "css": "gs://networkviz/networkcluster/dev/index.css"
       }
     }
   ]

@@ -28,15 +28,15 @@
   "fields": {
     "dimID": [
       {
-        "id": "qt_cbtlgh7ckc",
-        "name": "xData",
+        "id": "qt_6gid4lbpkc",
+        "name": "Tags",
         "type": "TEXT",
         "concept": "DIMENSION"
       }
     ],
     "metricID": [
       {
-        "id": "qt_yqi6um7ckc",
+        "id": "qt_7gid4lbpkc",
         "name": "yData",
         "type": "TEXT",
         "concept": "DIMENSION"
@@ -220,6 +220,5 @@
     "themeGridColor": {
       "color": "#e0e0e0"
     }
-  },
-  "interactions": {}
+  }
 };

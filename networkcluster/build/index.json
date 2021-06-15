@@ -6,7 +6,7 @@
       "elements": [
         {
           "id": "dimID",
-          "label": "A dimension",
+          "label": "Concepts Data",
           "type": "DIMENSION",
           "options": {
             "min": 1,
@@ -15,7 +15,7 @@
         },
         {
           "id": "metricID",
-          "label": "A metric",
+          "label": "Concepts Links",
           "type": "DIMENSION",
           "options": {
             "min": 1,
@@ -30,6 +30,5 @@
       "id": "tagIdInteraction",
       "supportedActions": ["FILTER"]
     }
-  ],
-  "style": [ ]
+  ]
 }
