@@ -27,7 +27,7 @@
   ],
   "interactions": [
     {
-      "id": "tagIdInteraction",
+      "id": "interactionsConfigId",
       "supportedActions": ["FILTER"]
     }
   ]

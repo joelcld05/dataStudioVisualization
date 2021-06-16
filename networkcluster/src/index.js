@@ -13,6 +13,7 @@ export const LOCAL = false;
 
 const drawViz = (data) => {
 
+  var fields = data.fields;
   var stry=data.tables.DEFAULT[0].metricID[0]
   .replace("},];", "}]")
   .replace(/:'/g,':"')
@@ -66,30 +67,22 @@ const drawViz = (data) => {
   function createMention(){
     var mention = document.createElement('div');
     mention.className ="mentionBox";
-
     var mentiondatacontent = document.createElement('div');
     mentiondatacontent.className="mentionContentBox";
-
     var image = document.createElement('div');
     image.className="imageMentionBox";
-
     var imagetag = document.createElement('img');
     imagetag.className="imagenUsuario";
     imagetag.src ="https://www.vippng.com/png/detail/202-2026524_person-icon-default-user-icon-png.png";
     image.append(imagetag);
-
     var mentiondata = document.createElement('div');
     mentiondata.className="mentionData";
-
     var mentiontext = document.createElement('div');
     mentiontext.className="metiontext";
-
     var userMention=document.createElement('p');
     userMention.textContent="@usuario";
-
     var userTxt=document.createElement('p');
     userTxt.textContent="Mira Luiscito, aqui no tiene nada que ver quien es el patron, ni tiene que ver quien lo denuncia, el hecho es que es corrupción aunque sea el niño dios el que lo haga y hay que denunciarlo, aunque no vaya a pasar nada…";
-    
     mentiontext.append(userMention);
     mentiontext.append(userTxt);
     mentiondatacontent.append(mentiondata);
@@ -101,21 +94,19 @@ const drawViz = (data) => {
 
   function interactionFilter(id) {
 
-    const interactionId = "tagIdInteraction";
-    const dimensionId = "qt_6gid4lbpkc";
+    const interactionId = "interactionsConfigId";
+    const dimensionId = fields.dimID[0].id;
     const FILTER = dscc.InteractionType.FILTER;
-    /*const xval=yData.find(x=>{
+    const xval=yData.find(x=>{
       return x.id===id
-    });*/
+    });
     
     let interactionData = {
       "concepts": [dimensionId],
-      "values": [[id]]
+      "values": [[xval.id+""]]
     };
 
     dscc.sendInteraction(interactionId, FILTER, interactionData);
-    let dataComponent=dscc.getComponentId()
-    console.log("🚀 ~ file: index.js ~ line 109 ~ interactionFilter ~ xval", interactionId, FILTER, dataComponent)
 
   }
 
@@ -134,6 +125,8 @@ const drawViz = (data) => {
 
   try {
     document.getElementById('container').remove();
+
+
     document.getElementById('dialog').remove();
   } catch (e) {
     error = "";
@@ -149,8 +142,6 @@ const drawViz = (data) => {
   containerElement.style.width = width + "px";
   document.body.appendChild(containerElement);
 
-  
-
   let merge = {};
 
   var colors = [];
@@ -163,6 +154,12 @@ const drawViz = (data) => {
   }*/
 
   var colors=[
+    "#421f79", "#7a3d93", "#635f6d", "#93f2d7", "#9b5c2a", "#15b9ee", "#0f5997",
+    "#409188", "#911e20", "#1350ce", "#10e5b1", "#fff4d7", "#cb2582", "#ce00be",
+    "#32d5d6", "#17232", "#608572", "#c79bc2", "#00f87c", "#77772a", "#6995ba",
+    "#fc6b57", "#f07815", "#8fd883", "#060e27", "#96e591", "#21d52e", "#d00043",
+    "#b47162", "#1ec227", "#4f0f6f", "#1d1d58", "#947002", "#bde052", "#e08c56",
+    "#28fcfd", "#bb09b", "#36486a", "#d02e29", "#1ae6db", "#3e464c", "#a84a8f",
     "#63b598", "#ce7d78", "#ea9e70", "#a48a9e", "#c6e1e8", "#648177" ,"#0d5ac1" ,
     "#f205e6" ,"#1c0365" ,"#14a9ad" ,"#4ca2f9" ,"#a4e43f" ,"#d298e2" ,"#6119d0",
     "#d2737d" ,"#c0a43c" ,"#f2510e" ,"#651be6" ,"#79806e" ,"#61da5e" ,"#cd2f00" ,
