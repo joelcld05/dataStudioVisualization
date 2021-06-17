@@ -14,6 +14,15 @@
           }
         },
         {
+          "id": "metricDataID",
+          "label": "Single Concept Data",
+          "type": "DIMENSION",
+          "options": {
+            "min": 1,
+            "max": 1
+          }
+        },
+        {
           "id": "metricID",
           "label": "Concepts Links",
           "type": "DIMENSION",
