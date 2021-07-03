@@ -1,0 +1,43 @@
+{
+  "data": [
+    {
+      "id": "conceptsMentions",
+      "label": "Concepts",
+      "elements": [
+        {
+          "id": "dimID1",
+          "label": "Concepts Data",
+          "type": "DIMENSION",
+          "options": {
+            "min": 1,
+            "max": 1
+          }
+        },
+        {
+          "id": "metricDataID2",
+          "label": "Single Concept Data",
+          "type": "DIMENSION",
+          "options": {
+            "min": 1,
+            "max": 1
+          }
+        },
+        {
+          "id": "metricID3",
+          "label": "Concepts Links",
+          "type": "DIMENSION",
+          "options": {
+            "min": 1,
+            "max": 1
+          }
+        }
+      ]
+    }
+  ],
+  "interactions": [
+    {
+      "id": "interactionsConfigIdMnetions",
+      "supportedActions": ["FILTER"]
+    }
+  ]
+}

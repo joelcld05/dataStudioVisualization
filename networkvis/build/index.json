@@ -37,5 +37,11 @@
         }
       ]
     }
+  ],
+  "interactions": [
+    {
+      "id": "interactionsConfigIdNetworkVis",
+      "supportedActions": ["FILTER"]
+    }
   ]
 }

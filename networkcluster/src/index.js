@@ -4,15 +4,11 @@ const local = require('./localMessage.js');
 const visData = require('vis-data');
 const visNetwork = require('vis-network');
 // write viz code here
-/*const drawViz = (data) => {
-  viz.readmeViz();
-  vz.firstViz(data);
-};*/
+
 
 export const LOCAL = false;
 
 const drawViz = (data) => {
-  console.log("🚀 ~ file: index.js ~ line 15 ~ drawViz ~ data", data)
 
   var fields = data.fields;
   var stry = data.tables.DEFAULT[0].dimID[0]
@@ -31,72 +27,11 @@ const drawViz = (data) => {
     .replace(/:'/g, ':"')
     .replace(/',/g, '",')
 
-  var mentions = data.tables.DEFAULT[1].metricID[0]
-    .replace("},];", "}]");
-
-
   let yData = JSON.parse(stry);
   let link = JSON.parse(strx);
 
 
-  var dialogHeader = document.createElement('div');
-  var dialog = document.createElement('div');
-  var title = document.createElement('div');
-  var close = document.createElement('div');
-  var content = document.createElement('div');
-  var loader = document.createElement('div');
 
-  function createDialod() {
-    dialog.id = "dialog";
-    dialogHeader.id = "dialogHeader";
-    content.id = "dialogContent";
-
-    title.id = "titleHeader";
-    title.textContent = "Header Title";
-    close.addEventListener("click", closeDialog);
-    close.textContent = "X"
-    close.id = "closebtn";
-    dialogHeader.append(title);
-    dialogHeader.append(close);
-
-    loader.className = "loader";
-    //content.append(loader);
-    //createMention();
-    //createMention();
-    content.textContent = mentions;
-
-    dialog.append(dialogHeader);
-    dialog.append(content);
-    document.body.prepend(dialog);
-  }
-
-  function createMention() {
-    var mention = document.createElement('div');
-    mention.className = "mentionBox";
-    var mentiondatacontent = document.createElement('div');
-    mentiondatacontent.className = "mentionContentBox";
-    var image = document.createElement('div');
-    image.className = "imageMentionBox";
-    var imagetag = document.createElement('img');
-    imagetag.className = "imagenUsuario";
-    imagetag.src = "https://www.vippng.com/png/detail/202-2026524_person-icon-default-user-icon-png.png";
-    image.append(imagetag);
-    var mentiondata = document.createElement('div');
-    mentiondata.className = "mentionData";
-    var mentiontext = document.createElement('div');
-    mentiontext.className = "metiontext";
-    var userMention = document.createElement('p');
-    userMention.textContent = "@usuario";
-    var userTxt = document.createElement('p');
-    userTxt.textContent = "Mira Luiscito, aqui no tiene nada que ver quien es el patron, ni tiene que ver quien lo denuncia, el hecho es que es corrupción aunque sea el niño dios el que lo haga y hay que denunciarlo, aunque no vaya a pasar nada…";
-    mentiontext.append(userMention);
-    mentiontext.append(userTxt);
-    mentiondatacontent.append(mentiondata);
-    mentiondatacontent.append(mentiontext);
-    mention.append(image);
-    mention.append(mentiondatacontent);
-    content.append(mention);
-  }
 
   function interactionFilter(id) {
     const interactionId = "interactionsConfigId";
@@ -106,18 +41,7 @@ const drawViz = (data) => {
       "concepts": [dimensionId],
       "values": [[id + ""]]
     };
-    //dscc.sendInteraction(interactionId, FILTER, interactionData);
-
-    var componentId = dscc.getComponentId();
-    var interactionMessage = {
-      type: dscc.ToDSMessageType.INTERACTION,
-      id: interactionId,
-      data: interactionData,
-      componentId: componentId,
-    };
-    console.log(interactionMessage);
-    window.parent.postMessage(interactionMessage, '*');
-
+    dscc.sendInteraction(interactionId, FILTER, interactionData);
 
   }
 
@@ -135,18 +59,6 @@ const drawViz = (data) => {
   }*/
 
   //console.log("🚀 ~ file: index.js ~ line 121 ~ colors", JSON.stringify(colors))
-
-
-
-  function showDialog(id) {
-    var dialog = document.getElementById('dialog');
-    dialog.style.display = "block";
-  }
-
-  function closeDialog() {
-    var dialog = document.getElementById('dialog');
-    dialog.style.display = "none";
-  }
 
   let error;
   let colorGroups = {};
@@ -172,8 +84,6 @@ const drawViz = (data) => {
       item.color = colors[count];
     }
   })
-
-
 
   try {
     let semiColonArray = data.style.excludeWords.value.split(';');
@@ -231,7 +141,6 @@ const drawViz = (data) => {
   };
 
   try {
-
     if (!document.getElementById('container')) {
       var containerElement = document.createElement('div');
       containerElement.id = 'container';
@@ -241,27 +150,19 @@ const drawViz = (data) => {
       containerElement.style.height = height + "px";
       containerElement.style.width = width + "px";
       document.body.appendChild(containerElement);
-
+      
       var container = document.getElementById("container");
       let networkG = new visNetwork.Network(container, data, options);
       networkG.on('click', (params) => {
-
         let node = networkG.getNodeAt(params.pointer.DOM);
         if (node) {
           interactionFilter(node);
         }
       });
-
     }
-
-
   } catch (e) {
     error = "";
   }
-
-
-
-
 };
 
 
@@ -272,13 +173,3 @@ if (LOCAL) {
   dscc.subscribeToData(drawViz, { transform: dscc.objectTransform });
 }
 
-
-window.addEventListener("message", (event) => {
-console.log("🚀 ~ file: index.js ~ line 277 ~ window.addEventListener ~ event", event)
-  
-
-  // ...
-}, false);
-
-
-https://datastudio.google.com/u/0/batchedDataV2?appVersion=20210616_00020056

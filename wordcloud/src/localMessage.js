@@ -3,7 +3,7 @@ export const message = {
     "DEFAULT": [
       {
         "dimID": [
-          "AdventurePark"
+          "AdventurePark;000011"
         ],
         "metricID": [
           "70"
